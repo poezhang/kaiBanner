@@ -17,8 +17,8 @@
 ```
  // 请使用规定的className，父节点的className不是强制规定的，你可以随意定义
  // example1：
-	<div class="kai_banner_container clearfix">
-		<div class="kai_banner_body clearfix">
+	<div class="banner">
+		<div class="kai_banner_body">
 			<a href=""><img src="img/banner_01.jpg"></a>
 			<a href=""><img src="img/banner_02.jpg"></a>
 			<a href=""><img src="img/banner_03.jpg"></a>
@@ -32,22 +32,22 @@
 			<span style='background-image:url(img/banner_04.jpg)'></span>
 			<span style='background-image:url(img/banner_05.jpg)'></span>
 		</div>
-		<div class="kai_banner_prevbtn side_btn"></div>
-		<div class="kai_banner_nextbtn side_btn"></div>
+		<div class="kai_banner_prevbtn"></div>
+		<div class="kai_banner_nextbtn"></div>
 	</div>
 ```
 ```
  // 请使用规定的className，父节点的className不是强制规定的，你可以随意定义
  // example2：
- <div class="kai_banner3_container clearfix">
-		<div class="kai_banner_body clearfix">
+ <div class="banner2">
+		<div class="kai_banner_body">
 			<div><img src="img/banner_01.jpg"></div>
 			<div><img src="img/banner_02.jpg"></div>
 			<div><img src="img/banner_03.jpg"></div>
 			<div><img src="img/banner_04.jpg"></div>
 		</div>
-		<div class="kai_banner_prevbtn side_btn"></div>
-		<div class="kai_banner_nextbtn side_btn"></div>
+		<div class="kai_banner_prevbtn"></div>
+		<div class="kai_banner_nextbtn"></div>
   </div>
 ```
 ## CSS
