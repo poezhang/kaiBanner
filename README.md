@@ -63,10 +63,7 @@ $('').kaiBanner();
 $('').kaiBanner({
   speed:1000, // 轮播的动画速度
   fixedWidth:false, // 轮播组件的父容器宽度是否固定
-  minWidth:0, // 轮播组件的父容器最小宽边
   intervalTime:3000, // 每两次滚动的时间间隔（毫秒）
-  throtteDelayTime:50, // throtte 节流/防抖函数的延迟执行时间（毫秒）
-  throtteMaxTime:1000, // throtte 节流/防抖函数的必须执行时间（毫秒）
   highlightClass:'' // 当滚动到相应页面时，底部对应位置按钮的高亮样式类名
 });
 ```
@@ -76,8 +73,5 @@ $('').kaiBanner({
 | :-------- | --------:| :--: |:--: |
 |speed|Number|1000| 轮播的动画速度
 |intervalTime |Number|3000 |每两次滚动的时间间隔（毫秒）
-|fixedWidth|Boolean|false|轮播组件的容器（最外层节点）宽度是否固定
-|minWidth|Number| 0 |轮播组件的容器（最外层节点）最小宽边
-|throtteDelayTime|Number|50|throtte 节流/防抖函数的延迟执行时间（毫秒）
-|throtteMaxTime|Number|1000|throtte 节流/防抖函数的必须执行时间（毫秒）
+|fixedWidth|Boolean|false|轮播组件的容器（最外层节点）宽度是否为固定值。虽然是可选的参数，但建议按照实际情况填写，如果宽度是固定的，将不会为组件添加window.onresize事件，利于性能。
 |highlightClass|String|''| 当滚动到相应页面时，底部对应位置按钮的高亮样式类名
