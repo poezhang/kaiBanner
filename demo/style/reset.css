@@ -1,0 +1,73 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+/*自定义：字体以及背景颜色默认文字颜色*/
+body{
+    font-size: 14px;
+    font-family:"Microsoft Yahei","Arial";
+}
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img,button,input{ 
+    border: 0; 
+} 
+/*自定义：字体*/
+input{
+    font-family:"SimHei","Microsoft Yahei","Arial";
+}
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+ol,ul { 
+    list-style: none; 
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+}
+/*自定义：注意img设置为block时候 对部分display设置为inline-block元素带来的垂直方向上的base-line问题 一般需要使用vertical-align属性设置为top解决*/
+img{
+    display: block;
+}
+
+/*自定义部分*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/*自定义：字体 下划线 颜色*/
+a{
+    font-family:"SimHei","Microsoft Yahei","Arial";
+    text-decoration: none;
+}
+
+a:link {text-decoration:none;} 
+a:visited {text-decoration:none;} 
+a:hover {text-decoration:none;} 
+a:active { text-decoration:none;}
+
+/*自定义：取消select的默认样式*/
+ select{
+    appearance:none;
+}
+
+i, cite, em, var, address, dfn{
+    font-style: normal;
+}
