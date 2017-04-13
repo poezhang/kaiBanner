@@ -58,7 +58,6 @@
 $('').kaiBanner();
 ```
 - 自定义配置
-- 注：`throtteDelayTime` 和 `throtteMaxTime` 是节流/防抖函数的配置。如果你不了解节流/防抖函，可以[click here](http://www.css88.com/archives/4648)了解，或者直接使用默认值即可。
 ```
 $('').kaiBanner({
   speed:1000, // 轮播的动画速度
