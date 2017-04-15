@@ -1,6 +1,9 @@
 # kaiBanner
 - 一款小而美的jQuery轮播插件，配置简单，运行稳定；
 - ‘come and back’徘徊式的轮播效果，翻译成人话就是：当轮播到最后一个banner图时，不会回到第一幅banner，而是按照相反的方向从最后一幅banner图轮播回到第一幅banner上，类似于按照‘1234543212345...’这样的顺序无限左右滚动。
+# DEMO
+[DEMO1](https://poezhang.github.io/kaiBanner/demo/demo1.html) | 响应式宽度
+[DEMO2](https://poezhang.github.io/kaiBanner/demo/demo2.html) | 固定宽度
 # 使用
 ## HTML
 项目依赖jQuery，请在引入插件之前引入jQuery文件
