@@ -26,22 +26,19 @@
 		};
 		
 		var utils = {
-			throttle : function (callback,delayTime,maxTime){
+			throttle:function(callback,delayTime,maxTime){
 				var timer = null;
-				var perTime = null;
-
+				var prevTime = 0;
+				// other
 				return function(){
-					var	context = this;
-					var	argument = arguments;
-
-					clearTimeout(timer);
-					if(maxTime>0){
-						var currTime=new Date();
-						if(!perTime||currTime-perTime>=maxTime){
-							perTime=currTime;
-							callback.apply(context,argument);
-						}
+					var context = this;
+					var argument = arguments;
+					var currTime = Date.now();
+					if(maxTime && currTime - prevTime >= maxTime){
+						prevTime = currTime;
+						callback.apply(context,argument);
 					}else{
+						if(timer) clearTimeout(timer);
 						timer = setTimeout(function(){
 							callback.apply(context,argument);
 						},delayTime);
